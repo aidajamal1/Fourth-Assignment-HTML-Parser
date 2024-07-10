@@ -1,13 +1,16 @@
 import java.util.Objects;
 
 public class Country {
-    private String name;
-    private String capital;
-    private int population;
-    private double area;
+    private final String name;
+    private final String capital;
+    private final int population;
+    private final double area;
 
     public Country(String name, String capital, int population, double area) {
-        //TODO
+        this.name = name;
+        this.population = population;
+        this.area = area;
+        this.capital = capital;
 
     }
 
@@ -29,8 +32,12 @@ public class Country {
 
     @Override
     public String toString() {
-        //TODO
-        return "";
+        return "Country{" +
+                "name='" + name + '\'' +
+                ", capital='" + capital + '\'' +
+                ", population=" + population +
+                ", area=" + area +
+                '}';
     }
 
     @Override
